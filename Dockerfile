@@ -8,7 +8,7 @@ RUN apt-get update \
 
 ENV SPARK_HOME /spark
 
-RUN curl -s http://www.apache.org/dist/spark/spark-1.6.0/spark-1.6.0-bin-hadoop2.6.tgz | tar -xz -C / \
+RUN curl -s http://d3kbcqa49mib13.cloudfront.net/spark-1.6.0-bin-hadoop2.6.tgz | tar -xz -C / \
   && mv /spark-1.6.0-bin-hadoop2.6 /spark
 
 COPY start-worker /usr/bin
